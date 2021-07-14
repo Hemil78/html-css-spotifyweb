@@ -18,6 +18,7 @@ body{
 .nav-aside{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 230px;
     background-color: #000;
 }
@@ -31,8 +32,11 @@ header{
 }
 
 .upgrade{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    background-color: green;
+    background-color: #080b12;
     height: 70px;
 }
 
@@ -46,7 +50,7 @@ header{
 
 main{
     width: 100%;
-    background-color: rgb(252, 150, 113);
+    background-color: #141922;
     overflow: auto;
     height: calc(100% - 70px);
     padding: 0 10px;
@@ -102,9 +106,7 @@ ul{
     color: #a3a3a3;
     font-size: 13px;
 }
-.playlist{
-    margin-top: 10px;
-}
+
 .plus-playlist{
     margin-top: 8px;
 }
@@ -113,13 +115,15 @@ ul{
     font-size: 20px;
 }
 .name-playlist{
+    flex-grow: 2;
     max-height: 240px;
+    margin-bottom: 80px;
 }
 .name-playlist li{
     margin: 15px 0;
 }
 .space-aside{
-    flex-grow: 2;
+    
 }
 .installa{
     padding: 6px 0;
@@ -137,10 +141,23 @@ ul{
 
 /* media aside */
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 700px) {
     .name-playlist{
         overflow: auto;
     }
+}
+
+/* upgrade */
+.effettua{
+    border: 1px solid white;
+    padding: 8px 30px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.effettua a{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* main */
@@ -158,8 +175,6 @@ ul{
 }
 
 .card{
-    background-color: lightblue;
-    border: 1px solid;
     margin: 0 5px;
     width: calc(100% / 6);
 }
@@ -177,6 +192,11 @@ ul{
 .card p{
     color:#a3a3a3;
     font-size: 13px;
+}
+
+.circle{
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
