@@ -188,7 +188,7 @@ ul{
 }
 
 .card{
-    margin: 0 5px;
+    margin: 0 5px 25px 5px;
     width: calc(100% / 6);
 }
 .card img{
@@ -212,6 +212,61 @@ ul{
     overflow: hidden;
 }
 
+/* media main */
+@media screen and (max-width: 1300px) {
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 20%;
+    } 
+}
+        
+
+@media screen and (max-width: 1100px) {
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 25%;
+    } 
+}
+        
+
+@media screen and (max-width: 900px) {
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 40%;
+    } 
+}
+        
+
+@media screen and (max-width: 700px) {
+    .description{
+        text-align: center;
+    }
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 50%;
+    } 
+}
+        
 
 
 
