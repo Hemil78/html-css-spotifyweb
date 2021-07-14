@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-/* commons */
-
+/* commons layout*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .container{
     display: flex;
     width: 100%;
@@ -52,6 +54,18 @@ footer{
     width: 100%;
     height: 70px;
     background-color: rgb(98, 153, 255);
+}
+
+/* aside */
+.nav-aside{
+    padding: 10px;
+}
+.logo{
+    height: 60px;
+}
+
+.logo img{
+width: 110px;
 }
 
 
