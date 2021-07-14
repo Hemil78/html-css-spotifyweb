@@ -5,6 +5,7 @@
 }
 
 /* commons layout*/
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -18,7 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 230px;
-    background-color: red;
+    background-color: #000;
 }
 
 .hero{
@@ -56,7 +57,16 @@ footer{
     background-color: rgb(98, 153, 255);
 }
 
+a{
+    text-decoration: none;
+}
+
+.fix-white{
+    color: white;
+}
+
 /* aside */
+
 .nav-aside{
     padding: 10px;
 }
@@ -65,16 +75,77 @@ footer{
 }
 
 .logo img{
-width: 110px;
+    width: 110px;
 }
-
-
-/* da cancellare */
-
-.nav-aside div{
-    border: 1px solid;
+ul{
+    list-style: none;
 }
-
+.home ul li i{
+    color: #a3a3a3;
+    font-size: 18px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+}
+.nav-aside p,
+.nav-aside a,
+.name-playlist ul li{
+    color: #a3a3a3;
+    font-size: 13px;
+}
+.playlist{
+    margin-top: 10px;
+}
+.plus-playlist{
+    display: flex;
+    margin-top: 8px;
+}
+.square-plus{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #a3a3a3;
+    margin-right: 8px;
+}
+.square-plus i{
+    margin: auto;
+    font-size: 18px;
+}
+.text-playlist{
+    display: flex;
+    align-items: center;
+}
+.name-playlist{
+    max-height: 240px;
+}
+.name-playlist li{
+    margin: 15px 0;
+}
 .space-aside{
     flex-grow: 2;
 }
+.installa{
+    padding: 6px 0;
+    border-bottom: 1px solid #a3a3a3;
+}
+.app-bottom i{
+    margin-right: 8px;
+}
+.john-doe{
+    padding-top: 6px;
+}
+.john-doe i{
+    font-size: 20px;
+}
+
+/* media aside */
+
+@media screen and (max-height: 600px) {
+    .name-playlist{
+        overflow: auto;
+    }
+}
+
+
+
+
