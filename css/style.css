@@ -100,7 +100,9 @@ ul{
     font-size: 18px;
     margin-right: 5px;
     margin-bottom: 10px;
-    
+}
+.home a:hover{
+    color: white;
 }
 .nav-aside p,
 .nav-aside a,
@@ -124,6 +126,9 @@ ul{
     background-color: #a3a3a3;
     margin-right: 10px;
 }
+.text-plus a:hover{
+    color: white;
+}
 .plus-playlist i{
     font-size: 20px;
 }
@@ -135,9 +140,15 @@ ul{
 .name-playlist li{
     margin: 15px 0;
 }
+.name-playlist a:hover{
+    color: white;
+}
 .installa{
     padding: 6px 0;
     border-bottom: 1px solid #a3a3a3;
+}
+.installa a:hover{
+    color: white;
 }
 .app-bottom i{
     margin-right: 8px;
@@ -174,16 +185,20 @@ ul{
 }
 
 .effettua{
+    font-size: 14px;
+    font-weight: 600;
     border: 1px solid white;
     padding: 8px 30px;
     border-radius: 25px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .effettua a{
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
+    color: #fff;
 }
+.effettua:hover{
+    transform: scale(1.1);
+}
+
 
 /* navbar-header */
 .navbar-header{
@@ -194,6 +209,10 @@ ul{
     font-size: 15px;
     font-weight: 700;
     color: #a3a3a3;
+}
+.navbar-header a:hover{
+    color: white;
+    font-size: 16px;
 }
 
 /* main */
@@ -322,6 +341,9 @@ footer{
     display: flex;
     align-items: center;
 }
+.icons i:hover{
+    color: white;
+}
 .file{
     padding-left: 25px;
 }
@@ -345,10 +367,13 @@ footer{
     font-size: 20px;
     color: white;
 }
+.play-stop ul li i:hover{
+    color: lime;
+}
 .square2{
     width: 40px;
     height: 40px;
-    border: 4px solid white;
+    border: 3px solid white;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -381,6 +406,10 @@ footer{
     border: 3px solid lightgrey;
     border-radius: 5px;
 }
+.barra-play-effect:hover,
+.voice:hover{
+    border:3px solid  lime;
+}
 
 .barra-play{ width: 500px;}
 
@@ -396,7 +425,12 @@ footer{
     padding-left: 10px;
 }
 
-.nav-right a{color: white;}
+.nav-right a{
+    color: white;
+}
+.nav-right a:hover{
+    color: lime;
+}
 
 
 
