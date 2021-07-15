@@ -12,7 +12,7 @@ body{
 .container{
     display: flex;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
 }
 
 .nav-aside{
@@ -60,7 +60,7 @@ main{
 
 footer{
     width: 100%;
-    height: 70px;
+    height: 90px;
     background-color: rgb(98, 153, 255);
 }
 
@@ -110,22 +110,30 @@ ul{
 }
 
 .plus-playlist{
-    margin-top: 8px;
+    display: flex;
+    align-items: baseline;
+    margin-top: 12px;    
+}
+
+.square-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #a3a3a3;
+    margin-right: 10px;
 }
 .plus-playlist i{
-    margin-right: 8px;
     font-size: 20px;
 }
+
 .name-playlist{
-    flex-grow: 2;
     max-height: 240px;
     margin-bottom: 80px;
 }
 .name-playlist li{
     margin: 15px 0;
-}
-.space-aside{
-    
 }
 .installa{
     padding: 6px 0;
@@ -148,8 +156,23 @@ ul{
         overflow: auto;
     }
 }
+@media screen and (max-width: 450px) {
+    .nav-aside{
+        max-width: 60px;
+        text-align: center;
+    }
+    .logo img{
+        width: 50px;
+    }
 
-/* upgrade */
+    .playlist h5,
+    .playlist .text-plus{
+        display: none;
+
+    }
+
+}
+
 .effettua{
     border: 1px solid white;
     padding: 8px 30px;
@@ -184,7 +207,7 @@ ul{
 }
 .box-card{
     display: flex;
-    width: 100);
+    width: 100;
 }
 
 .card{
@@ -266,6 +289,110 @@ ul{
         width: 50%;
     } 
 }
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+}
+footer .nav-left,
+footer .nav-central,
+footer .nav-right{
+    background-color: red;
+    border: 1px solid;
+}
+
+.nav-left{
+    display: flex;
+}
+.brano img{
+    width: 70px;
+}
+.text-brano{
+    margin-right: 30px;
+    padding: 8px 10px;
+
+}
+.text-brano h4{
+    margin-bottom: 3px;
+    color: white;
+}
+.text-brano p{
+    font-size: 12px;
+    color: #a3a3a3; 
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.file{
+    padding-left: 25px;
+}
+.file a i,
+.heart a i{
+    font-size: 20px;
+    color: #a3a3a3;
+}
+
+.play-stop{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.play-stop ul li,
+.square2{
+    display: inline-block;
+}
+
+.play-stop ul li i{
+    font-size: 20px;
+    color: white;
+}
+.square2{
+    width: 40px;
+    height: 40px;
+    border: 4px solid white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 25px;
+}
+.play-stop ul > li{
+    margin: 0 10px;
+}
+
+.time-play span{
+    color: white;
+}
+
+.barra-play{
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.barra-play-effect{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 200px;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
         
 
 
