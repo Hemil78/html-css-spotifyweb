@@ -202,7 +202,7 @@ ul{
     color:white;
 }
 .text-installa a:hover{
-    color: lime;
+    color: white;
 }
 
 /* upgrade */
@@ -428,6 +428,12 @@ footer{
 }
 
 /* media */
+@media screen and (max-height: 640px){
+    .name-playlist{
+        overflow-y: auto;
+    }
+}
+
 
 @media screen and (max-width: 1300px) {
     /* main card */
@@ -534,7 +540,7 @@ footer{
     } 
     .card{
         margin-top: 20px;
-        width: 100%;
+        width: 80%;
     } 
 
     /* footer */
@@ -615,6 +621,11 @@ footer{
     .download-app{
         border: none;
     }
+    /* main card */
+    .card{
+        margin-top: 20px;
+        width: 100%;
+    } 
 
 }
 
