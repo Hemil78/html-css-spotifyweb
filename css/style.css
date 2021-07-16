@@ -160,30 +160,6 @@ ul{
     font-size: 20px;
 }
 
-/* media aside */
-
-@media screen and (max-height: 700px) {
-    .name-playlist{
-        overflow: auto;
-    }
-}
-@media screen and (max-width: 450px) {
-    .nav-aside{
-        max-width: 60px;
-        text-align: center;
-    }
-    .logo img{
-        width: 50px;
-    }
-
-    .playlist h5,
-    .playlist .text-plus{
-        display: none;
-
-    }
-
-}
-
 .effettua{
     font-size: 14px;
     font-weight: 600;
@@ -277,61 +253,6 @@ ul{
     overflow: hidden;
 }
 
-/* media main */
-@media screen and (max-width: 1300px) {
-    .box-card{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-    .card{
-        width: 20%;
-    } 
-}
-        
-
-@media screen and (max-width: 1100px) {
-    .box-card{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-    .card{
-        width: 25%;
-    } 
-}
-        
-
-@media screen and (max-width: 900px) {
-    .box-card{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-    .card{
-        width: 40%;
-    } 
-}
-        
-
-@media screen and (max-width: 700px) {
-    .description{
-        text-align: center;
-    }
-    .box-card{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-    .card{
-        width: 50%;
-    } 
-}
-
 /* footer */
 footer{
     display: flex;
@@ -381,26 +302,20 @@ footer{
     text-align: center;
 }
 
-.play-stop ul li,
-.square2{
-    display: inline-block;
+.play-stop ul li{
+    display: inline-block; 
 }
 
 .play-stop ul li i{
     font-size: 20px;
     color: white;
+    vertical-align: middle;
+}
+.play-stop ul li .fa-play-circle{
+    font-size: 30px;
 }
 .play-stop ul li i:hover{
     color: lime;
-}
-.square2{
-    width: 40px;
-    height: 40px;
-    border: 3px solid white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    margin: 0 25px;
 }
 
 .play-stop ul > li{
@@ -438,7 +353,7 @@ footer{
 
 .barra-play-effect{ width: 200px;}
 
-.line-voice{ width: 150px;}
+.line-voice{width: 150px;}
 
 .voice{ width: 50px;}
 
@@ -455,7 +370,103 @@ footer{
     color: lime;
 }
 
+/* media */
+@media screen and (max-width: 1300px) {
+    /* main card */
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 20%;
+    }
 
+}
+        
+
+@media screen and (max-width: 1100px) {
+    /* main card */
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 25%;
+    }
+    
+    /* footer */
+    .icons{
+        display: none;
+    }
+    .nav-right ul li .fa-list,
+    .nav-right ul li .fa-desktop{
+        display: none;
+    }
+    .line-voice{
+        width: 80px;
+    }
+}
+        
+
+@media screen and (max-width: 900px) {
+    /* main card */
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 40%;
+    }
+    
+    /* footer */
+    .barra-play{ width: 300px;}
+}
+        
+
+@media screen and (max-width: 700px) {
+    /* main card */
+    .description{
+        text-align: center;
+    }
+    .box-card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .card{
+        width: 50%;
+    } 
+
+    /* footer */
+    .text-brano{
+        display: none;
+    }
+    .brano {
+        align-self: center;
+    }
+    .brano img{
+        width: 50px;
+    }
+    .line-voice{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    /* footer */
+    .time-play{
+        display: none;
+    }
+
+}
 
 
 
