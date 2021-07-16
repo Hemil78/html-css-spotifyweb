@@ -447,6 +447,21 @@ footer{
     .name-playlist{
         overflow-y: auto;
     }
+
+    /* modifica scrool playlist */
+    .name-playlist::-webkit-scrollbar {
+        width: 12px;               
+      }
+      
+    .name-playlist::-webkit-scrollbar-track {
+        background: #000;
+               
+      }
+      
+    .name-playlist::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px rgb(163, 163, 163);    
+        border-radius: 20px;         
+      }
 }
 
 
