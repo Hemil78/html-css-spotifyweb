@@ -86,12 +86,20 @@ h4{
     padding: 10px;
 }
 .logo{
+    position: relative;
     height: 60px;
 }
 
-.logo img{
-    width: 110px;
+.logo .first-logo{
+    display: block;
+    width: 150px;
 }
+
+.logo .logo-overlay{
+    display: none;
+    width: 45px;
+}
+
 ul{
     list-style: none;
 }
@@ -109,6 +117,13 @@ ul{
 .name-playlist ul li{
     color: #a3a3a3;
     font-size: 13px;
+}
+
+.min-nav-aside{
+    display: flex;
+}
+.home-adide{
+    margin-right: 10px;
 }
 
 .plus-playlist{
@@ -145,13 +160,22 @@ ul{
 }
 .installa{
     padding: 6px 0;
-    border-bottom: 1px solid #a3a3a3;
 }
 .installa a:hover{
     color: white;
 }
 .app-bottom i{
+    display: flex;
     margin-right: 8px;
+}
+.download-app{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a3a3a3;
+}
+.profile-doe{
+    display: flex;
+    align-items: center;
 }
 .john-doe{
     padding-top: 6px;
@@ -371,6 +395,7 @@ footer{
 }
 
 /* media */
+
 @media screen and (max-width: 1300px) {
     /* main card */
     .box-card{
@@ -459,11 +484,68 @@ footer{
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px){
 
     /* footer */
+
     .time-play{
         display: none;
+    }
+    .nav-central{
+        display: flex;
+        align-items: center;
+    }
+    .nav-right,
+    .nav-right ul{
+        display: flex;
+    }
+
+    /* adide */
+    .logo .first-logo{
+        display: none;
+        width: 150px;
+    }
+    
+    .logo .logo-overlay{
+        display: block;
+        width: 45px;
+    }
+    .nav-aside{
+        align-items: center;
+        width: 60px;
+    }
+
+    .text-min-aside{
+        display: none;
+    }
+    .home-aside{
+        padding: 10px 0;
+    }
+    .home-aside a{
+        font-size: 20px;
+    }
+    .playlist h5,
+    .text-plus{
+        display: none;
+    }
+    .square-plus{
+        margin: 0;
+    }
+    .name-playlist ul{
+        display: none;
+    }
+    .text-installa{
+        display: none;
+    }
+    .installa{
+        display: flex;
+        margin: auto;
+    }
+    .installa i{
+        font-size: 20px;
+    }
+    .download-app{
+        border: none;
     }
 
 }
