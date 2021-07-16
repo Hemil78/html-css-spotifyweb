@@ -225,18 +225,41 @@ ul{
     color: #a3a3a3;
 }
 .box-card{
+    flex-wrap: wrap;
     display: flex;
     width: 100;
 }
 
 .card{
     margin: 0 5px 25px 5px;
-    width: calc(100% / 6);
+    width: calc((100% / 6) - 10px);
 }
 .card img{
     width: 100%;
     overflow: hidden;
 }
+.img-lp{
+    position: relative;
+}
+.play-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card:hover .play-overlay{
+    opacity: 1;
+}
+
 .title-lp{
     text-align: center;
 }
